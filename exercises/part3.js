@@ -12,5 +12,5 @@ var getDaysToLocation = function (kilometersAway) {
     return hours / 24;
 };
 // Call the function and print the outputs for the Mars trip and the moon trip:
-console.log(spacecraftName + " would take " + getDaysToLocation(kilometersToMars) + " to get to Mars.");
-console.log(spacecraftName + " would take " + getDaysToLocation(kilometersToTheMoon) + " to get to the Moon.");
+// console.log(spacecraftName + " would take " + getDaysToLocation(kilometersToMars) + " to get to Mars.");
+// console.log(spacecraftName + " would take " + getDaysToLocation(kilometersToTheMoon) + " to get to the Moon.");

@@ -20,16 +20,16 @@ class Spacecraft {
     name: string;
     speedMph: number;
     constructor(name: string, speedMph: number) {
-        this.name;
-        this.speedMph;
+        this.name = name;
+        this.speedMph = speedMph;
     }
-
     getDaysToLocation(kilometersAway: number): number {
         let milesAway: number = kilometersAway * this.milesPerKilometer;
         let hours: number = milesAway / this.speedMph;
         return hours / 24;
     }
 }
+
 
 // Create an instance of the class here:
 let spaceShuttle = new Spacecraft('Determination', 17500);

@@ -14,10 +14,8 @@ var kilometersToTheMoon = 384400;
 var Spacecraft = /** @class */ (function () {
     function Spacecraft(name, speedMph) {
         this.milesPerKilometer = 0.621;
-        this.name = 'oh';
-        this.speedMph = 100;
-        this.name;
-        this.speedMph;
+        this.name = name;
+        this.speedMph = speedMph;
     }
     Spacecraft.prototype.getDaysToLocation = function (kilometersAway) {
         var milesAway = kilometersAway * this.milesPerKilometer;
