@@ -26,9 +26,7 @@ export class Rocket implements Payload {
     }
 
     canAdd(item: Payload): boolean {
-        if ((this.currentMassKg() + item.massKg) <= this.totalCapacityKg) {
-            return true;
-        }
+        return (this.currentMassKg() + item.massKg) <= this.totalCapacityKg;
     }
 
     addCargo(cargo: Cargo) {
