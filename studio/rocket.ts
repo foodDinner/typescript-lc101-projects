@@ -32,7 +32,7 @@ export class Rocket implements Payload {
     }
 
     addCargo(cargo: Cargo) {
-        if (this.canAdd(cargo) == true) {
+        if (this.canAdd(cargo)) {
             this.cargoItems.push(cargo);
             return true;
         }
@@ -41,7 +41,7 @@ export class Rocket implements Payload {
         }
     }
     addAstronaut(astronaut: Astronaut) {
-        if (this.canAdd(astronaut) == true) {
+        if (this.canAdd(astronaut)) {
             this.astronauts.push(astronaut);
             return true;
         }
