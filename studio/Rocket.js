@@ -18,9 +18,7 @@ var Rocket = /** @class */ (function () {
         return this.sumMass(this.astronauts) + this.sumMass(this.cargoItems);
     };
     Rocket.prototype.canAdd = function (item) {
-        if ((this.currentMassKg() + item.massKg) <= this.totalCapacityKg) {
-            return true;
-        }
+        return (this.currentMassKg() + item.massKg) <= this.totalCapacityKg;
     };
     Rocket.prototype.addCargo = function (cargo) {
         if (this.canAdd(cargo)) {
